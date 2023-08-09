@@ -15,7 +15,7 @@ public class SburRestDemoApplication {
 }
 
 class Coffee{
-	private final String id;
+	private String id;
 	private String name;
 
 	public Coffee(String id, String name) {
@@ -37,5 +37,9 @@ class Coffee{
 
 	public void setName(String name) {
 		this.name = name;
+	}
+
+	public void setId(String id) {
+		this.id = id;
 	}
 }
