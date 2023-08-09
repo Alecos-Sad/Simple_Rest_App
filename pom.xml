@@ -25,7 +25,20 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
+			<!-- Область видимости runtime зависимости для драйвера базы данных H2 означает его наличие по задаваемым classpath пути к классам в
+			среде выполнения и тестирования, но не при компиляции. Такова рекомендуемая практика для библиотек, которые не требуются для компиляции. -->
 			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+			<scope>runtime</scope>
 		</dependency>
 	</dependencies>
 
