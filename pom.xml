@@ -40,6 +40,16 @@
 			<artifactId>h2</artifactId>
 			<scope>runtime</scope>
 		</dependency>
+
+		<!-- Чтобы сгенерировать метаданные с помощью процессора аннотаций
+		и дать IDE возможность найти взаимосвязи между снабженными аннотацией
+		@ConfigurationProperties классами и соответствующими свойствами,
+		описанными в файле application.properties -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-configuration-processor</artifactId>
+			<optional>true</optional>
+		</dependency>
 	</dependencies>
 
 	<build>

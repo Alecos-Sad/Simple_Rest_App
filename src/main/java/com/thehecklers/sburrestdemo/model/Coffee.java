@@ -1,4 +1,4 @@
-package com.thehecklers.sburrestdemo;
+package com.thehecklers.sburrestdemo.model;
 
 import org.springframework.context.event.EventListener;
 
@@ -7,6 +7,7 @@ import javax.persistence.Id;
 import java.util.UUID;
 
 @Entity
+public
 class Coffee {
     @Id
     private String id;

@@ -1,5 +1,7 @@
-package com.thehecklers.sburrestdemo;
+package com.thehecklers.sburrestdemo.config;
 
+import com.thehecklers.sburrestdemo.model.Coffee;
+import com.thehecklers.sburrestdemo.repository.CoffeeRepository;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
